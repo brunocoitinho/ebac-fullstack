@@ -100,3 +100,20 @@ section h2, .articles article{
 #economy .articles article a{
     background-color: #ff9f1a;
 }
+
+#tech{
+    background-color: #65d0fa;
+}
+
+#tech .articles article a{
+    background-color: #1a44ff;
+}
+
+#entertainment{
+    background-color: #fa6574;
+}
+
+#entertainment .articles article a{
+    background-color: #ff1a35;
+}
+
