@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form label{
+    display: block;
+    width: 320px;
+    padding: 8px;
+}
+
+.container{
+    display: flex;
+}
+
+h1{
+    margin-left: 8px;
+}
+
+#msg{
+    display: none;
+    margin: 8px;
+    padding: 8px;
+}
+
+#btn-calcular{
+    background-color: green;
+    outline: none;
+    border: 1px solid gray;
+    cursor: pointer;
+    margin-left: 8px;
+    padding: 8px;
+}
+
+#btn-calcular:disabled{
+    background-color: gray;
+}
+
+.error{
+    color: red;
+}
+
+p.error{
+    background-color: rgb(255, 250, 196);
+}
+
+input.error{
+    outline-color: red;
+    border:red 1px solid;
