@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --bgcolor: #181921;
+    --card-color: #64698a4d;
+}
+
+body{
+    background-color: #181921;
+    color: white;
+}
+
+.container{
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px;
+}
+
+li{
+    list-style: none;
+}
+
+li.tarefaCadastrada{
+    display: none;
+    cursor: pointer;
+}
+
+p.tarefaRealizada{
+    text-decoration: line-through;
+}
+
+.card{
+    margin-top: 10px;
+    background-color: var(--card-color);
+    padding: 16px;
+    border-radius: 5px;
+}
+
+
+
+h2{
+    margin-bottom: 8px;
+}
+.card button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 3px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 24px;
+}
+.card form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.card input{
+    height: 40px;
+    width: 80%;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+.card button:hover{
+    background-color: green;
+}
+
