@@ -9,12 +9,16 @@ $(document).ready(function () {
         },
     };
 
+    $("#inputCpf").mask("000.000.000-00");
     $("#inputTel").mask("(00) 0000-0000  0", options);
     $("#inputCep").mask("00000-000");
 
     $("form").validate({
         rules: {
             inputNome: {
+                required: true,
+            },
+            inputCpf: {
                 required: true,
             },
             inputEmail: {
@@ -30,6 +34,7 @@ $(document).ready(function () {
             inputCep: {
                 required: true,
             },
+
         },
     });
 });
