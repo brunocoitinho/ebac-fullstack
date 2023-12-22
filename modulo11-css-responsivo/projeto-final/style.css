@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    --header-bg: #4848de;
+    --main-bg:#f0ecec;
+}
+
+
+header{
+    background-color: var(--header-bg);
+    color:var(--main-bg) ;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+header .container{
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: flex-start;
+}
+
+nav li{
+    list-style: none;
+    margin-left: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    color:var(--main-bg) ;
+    font-weight: bold;
+}
+
+main{
+    background-color: var(--main-bg);
+}
+
+main h2{
+    color: var(--header-bg);
+    border-bottom: 2px solid var(--header-bg);
+    font-style: italic;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+}
+
+#about .container div{
+    margin-left: 16px;
+}
+
+#about picture, #about img{
+    width: 100%;
+    padding: 0;
+}
+
+#products .container{
+    flex-direction: column;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.card img{
+    width: 100%
+}
+
+.card{
+    text-align: center;
+}
+
+.card h2, .card p, .card button{
+    margin-top: 8px;
+}
+
+.card button{
+    width: 100%;
+    padding: 8px;
+    background-color: var(--header-bg);
+    color: var(--main-bg);
+    border: 0;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 641px) and (max-width:1023px){
+    .container-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about .container{
+        flex-direction: column;
+    }
+
+    #about .container div{
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    
+    #about picture{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:640px){
+    .container-grid{
+        grid-template-columns: 1fr;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    #about .container{
+        flex-direction: column;
+    }
+
+    #about .container div{
+        margin-left: 0;
+        margin-top: 16px;
+    }
+}
+
