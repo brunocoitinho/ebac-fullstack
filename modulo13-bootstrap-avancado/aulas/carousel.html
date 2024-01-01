@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Carousel</title>
+
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+
+    <style>
+        .carousel img{
+            height: 360px;
+            object-fit: cover;
+        }
+
+        .container{
+            height: 100vh;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div id="carousel-exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="https://images.pexels.com/photos/306864/pexels-photo-306864.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                            <div class="carousel-caption bg-opacity-50 bg-black">
+                                <h2>Foto de Natal</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="https://images.pexels.com/photos/19515730/pexels-photo-19515730/free-photo-of-enfeites-de-natal-cesta-cesto-cobertor.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                            <div class="carousel-caption bg-opacity-50 bg-black">
+                                <h2>Foto de um cesto</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="https://images.pexels.com/photos/674723/pexels-photo-674723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                            <div class="carousel-caption bg-opacity-50 bg-black">
+                                <h2>Foto de Ano Novo</h2>
+                            </div>
+                        </div>
+                        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row"></div>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
