@@ -1,0 +1,26 @@
+.button {
+    padding: 12px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary {
+        color: white;
+        background-color: #4f2ac3;
+    }
+
+    @media(max-width: 40rem) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media(max-width: 64rem) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
