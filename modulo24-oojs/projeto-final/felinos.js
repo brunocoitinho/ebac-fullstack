@@ -36,7 +36,7 @@ function Felino(tamanho, peso){
 
 function Gato(tamanho, peso){
 
-    felino.call(this, tamanho, peso);
+    Felino.call(this, tamanho, peso);
 
     this.emitirSom = function(){
         console.log("Miau")
@@ -45,7 +45,7 @@ function Gato(tamanho, peso){
 
 function Leao(tamanho, peso){
 
-    felino.call(this, tamanho, peso);
+    Felino.call(this, tamanho, peso);
 
     this.emitirSom = function(){
         console.log("Roar")
