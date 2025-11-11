@@ -9,7 +9,6 @@ let alunos = [new Aluno("Bruno", 9), new Aluno("Maria", 10), new Aluno("João", 
 
 function aprovados() {
     return alunos.filter(aluno => aluno.nota >= 6);
-
 }
 
 console.log(aprovados());
